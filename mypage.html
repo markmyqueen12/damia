@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css">
+  <head> </head>
+  <body>
+
+  <img src="insta.jpg" width="10" height="10"> <font size="-5"> <font style="font-family:comic sans MS;"> Damia_LuvsSoccer123 </font>
+
+  <p>
+  <p>
+
+  <font size="+5"> All About Damia </font>
+  <p>
+
+  <font size="+1">Hey. Im Damia. I am lover of jesus and mom of 4 kids. My passions include:
+  <br/>
+  kayaking, horseback riding, wine tasting, and playing bocce. Uncooked eggs are my life. Yas.
+<br/>
+  I take the eggs from the chickens that sleep with me. They are named harold, cheetah,
+  and jordyn.
+
+<br/>
+<a href="https://www.youtube.com/watch?v=EoEobAvyZNo">Soccer</a> is my life. They are friendly okurrrr bye.
+
+
+
+<p>
+ <font size="+5"> CLICK <a href="https://www.idakoos.com/love-damia+mug,1454659"> HERE</a> TO BUY MY MERCH! <img src="merch.jpg" width="100" height="100">
+
+    <a href="https://www.idakoos.com/love-damia+mug,1454659">
+
+  </body>
+
+  <head>
+  <style>
+  #divtoshow {position:absolute;display:none;color:white;background-color:black}
+  #onme {width:150px;height:80px;background-color:yellow;cursor:pointer}
+  </style>
+  <script type="text/javascript">
+  var divName = 'divtoshow'; // div that is to follow the mouse (must be position:absolute)
+  var offX = 15;          // X offset from mouse position
+  var offY = 15;          // Y offset from mouse position
+
+  function mouseX(evt) {if (!evt) evt = window.event; if (evt.pageX) return evt.pageX; else if (evt.clientX)return evt.clientX + (document.documentElement.scrollLeft ?  document.documentElement.scrollLeft : document.body.scrollLeft); else return 0;}
+  function mouseY(evt) {if (!evt) evt = window.event; if (evt.pageY) return evt.pageY; else if (evt.clientY)return evt.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop); else return 0;}
+
+  function follow(evt) {
+      var obj = document.getElementById(divName).style;
+      obj.left = (parseInt(mouseX(evt))+offX) + 'px';
+      obj.top = (parseInt(mouseY(evt))+offY) + 'px';
+      }
+  document.onmousemove = follow;
+  </script>
+  </head>
+  <body>
+  <div id="divtoshow">aw tooooo sweet thank you</div>
+  <br><br>
+  <div id='onme' onMouseover='document.getElementById(divName).style.display="block"' onMouseout='document.getElementById(divName).style.display="none"'>Place cursor here if you think I am pretty!</div>
+
+  <script type="text/javascript">
+
+function getMouseCoords(e) {
+  var e = e || window.event;
+  document.getElementById('msg')
+}
+
+
+var followCursor = (function() {
+  var s = document.createElement('div');
+  s.style.position = 'absolute';
+  s.style.margin = '0';
+  s.style.padding = '5px';
+  s.style.border = '5px solid pink';
+
+  return {
+    init: function() {
+      document.body.appendChild(s);
+    },
+
+    run: function(e) {
+      var e = e || window.event;
+      s.style.left  = (e.clientX - 5) + 'px';
+      s.style.top = (e.clientY - 5) + 'px';
+      getMouseCoords(e);
+    }
+  };
+}());
+
+window.onload = function() {
+  followCursor.init();
+  document.body.onmousemove = followCursor.run;
+}
+
+</script>
+
+<div id="msg" style="width: 1000px; height: 1000px; border: 0px solid blue;"></div>
+  </body>
